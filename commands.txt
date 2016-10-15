@@ -1,0 +1,8 @@
+Regular commands
+
+Hey : Welcome to the stream, {username}
+Hello : Hello, {username}
+
+Special commands
+
+~uptime : Streaming for {time}
