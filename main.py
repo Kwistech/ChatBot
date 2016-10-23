@@ -1,9 +1,9 @@
-# ChatBot - Chat Bot for Twitch
+# KwisBot - Chat Bot for Twitch
 from datetime import datetime
 from socket import socket
 
 
-class ChatBot(object):
+class KwisBot(object):
 
     def __init__(self, host, port, channel, oauth):
         # Initializes parameters
@@ -43,7 +43,7 @@ class ChatBot(object):
             if "End of /NAMES list" in conn_str:
                 break
 
-        print("ChatBot is now active.")
+        print("KwisBot is now active.")
 
         # Main program loop
         while True:
@@ -93,11 +93,11 @@ def main():
     PORT = 6667
 
     # Channel and Oauth of Channel (Change these per user!)
-    channel = "channelname"  # All lowercase
+    channel = "kwisart"  # All lowercase
     oauth = "oauth:examplekey"  # Include "oauth:"
 
     # Initiates Bot
-    ChatBot(HOST, PORT, channel, oauth)
+    KwisBot(HOST, PORT, channel, oauth)
 
 if __name__ == "__main__":
     main()
