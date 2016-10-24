@@ -72,7 +72,7 @@ class KwisBot(object):
                 self.send_message(line[1].format(username=username))
 
             # Handles time input for time response message
-            if line[0] in user_message and "{time}" in line[1]:
+            elif line[0] in user_message and "{time}" in line[1]:
                 streaming_time = datetime.now() - self.start_time
                 stream_str = str(streaming_time).split(".")
                 self.send_message(line[1].format(time=stream_str[0]))
