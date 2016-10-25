@@ -63,9 +63,14 @@ class KwisBot(object):
 
                 self.print_commands(username, user_message)
 
-    def print_commands(self, username, user_message):
+    def print_commands(self, username, user_message, lower=True):
         for line in self.commands:
             line = line.split(" : ")
+
+            # Option to have user_message case sensitive.
+            if lower:
+                line[0] = line[0].lower()
+                user_message = user_message.lower()
 
             # Handles username input into username response message
             if line[0] in user_message and "{username}" in line[1]:
@@ -94,7 +99,7 @@ def main():
 
     # Channel and Oauth of Channel (Change these per user!)
     channel = "kwisart"  # All lowercase
-    oauth = "oauth:examplekey"  # Include "oauth:"
+    oauth = "oauth:"  # Include "oauth:"
 
     # Initiates Bot
     KwisBot(HOST, PORT, channel, oauth)

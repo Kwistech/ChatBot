@@ -6,3 +6,6 @@ Hello : Hello, {username}
 Special commands
 
 ~uptime : Streaming for {time}
+~kwisart : KwisArt is the artistic branch of Johnathon Kwisses.
+~kwisbot : KwisBot is a chat bot for Twitch created by Kwistech
+~website : www.kwisses.ca
