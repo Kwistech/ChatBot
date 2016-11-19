@@ -1,6 +1,6 @@
 # KwisBot
 
-KwisBot v1.0.1 (Python 3.5)
+KwisBot v.1.0.1 (Python 3.5)
 
 Chatbot for Twitch
 
